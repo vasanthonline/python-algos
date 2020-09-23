@@ -15,7 +15,3 @@ def removeNonIntersections(str_left, str_right):
 str_left = input("Please enter String 1:")
 str_right = input("Please enter String 2:")
 print("Number of characters to remove to make string 1 and string 2 as anagrams of each other: {}".format(removeNonIntersections(str_left, str_right)))
-
-
-
-
