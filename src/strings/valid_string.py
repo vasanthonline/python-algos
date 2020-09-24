@@ -6,7 +6,7 @@
   2. By removing just 1 character at a single index, does the condition #1 satisfy?
   If either of these condition satisfy, consider the string as valid.
   :param string: The input string
-  :type str: string
+  :type string: str
   :return: Whether the string satifies one of the two conditions or not.
   :rtype: boolean
 '''

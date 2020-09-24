@@ -3,7 +3,7 @@
 '''
   To take a string as an input, iterate thro each char and remove char(s) which are sequentially repetitive.
   :param string: The input string
-  :type str: string
+  :type string: str
   :return: The no. of characters to remove to make to string having characters which are sequentially non-repetitive.
   :rtype: int
 '''
