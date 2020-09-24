@@ -2,7 +2,13 @@
 
 # To take a string as an input, iterate thro each char and remove char which are sequentially repetitive.
 # Return the length of the non-repetitive string.
-
+'''
+  To take a string as an input, iterate thro each char and remove char(s) which are sequentially repetitive.
+  :param string: The input string
+  :type str: string
+  :return: The no. of characters to remove to make to string having characters which are sequentially non-repetitive.
+  :rtype: int
+'''
 def removeAlternatingChars(string):
   seq = list(string)
   tmp = seq[0]
