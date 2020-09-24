@@ -1,7 +1,5 @@
 #!/bin/python3
 
-# To take a string as an input, iterate thro each char and remove char which are sequentially repetitive.
-# Return the length of the non-repetitive string.
 '''
   To take a string as an input, iterate thro each char and remove char(s) which are sequentially repetitive.
   :param string: The input string
