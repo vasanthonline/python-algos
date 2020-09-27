@@ -11,14 +11,15 @@ import time
   :return: The length of the longest common substring that can be constructed
   :rtype: number
 '''
-def longestCommonSubstringLength(str_left, str_right):
+def longestCommonSubstringLength(string_left, string_right):
   intersections = []
+  length = len(string_left)
   max_intersection = 0
-  length = len(str_left)
   for i in range(length - 1, -1, -1):
-    char = str_left[i]
-    if char in str_right:
-      intersections.append(char)
+    char = string_left[i]
+    if char in string_right:
+      if char not in intersections:
+        intersections.append(char)
     else:
       continue
     
@@ -32,20 +33,16 @@ def longestCommonSubstringLength(str_left, str_right):
         continue
       if(max_intersection > len(sub_string)):
         continue
-      str_right_list = list(str_right)
+      str_right_list = list(string_right)
       intersection = ''
 
-      for value in sub_string:  
+      for value in sub_string:
         if value in str_right_list:
           intersection += value
           str_right_list = str_right_list[str_right_list.index(value)+1:]
-        # else:
-        #   intersection = ''
-        #   break
-      if(len(intersection) > 0):
+      if(len(intersection) > 0 and intersection not in intersections):
         max_intersection = max(max_intersection, len(intersection))
-        if(intersection not in intersections):
-          intersections.append(intersection)
+        intersections.append(intersection)
 
   if(len(intersections) == 0):
     return 0
