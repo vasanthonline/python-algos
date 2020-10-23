@@ -3,13 +3,11 @@ import time
 import itertools
 
 '''
-  To take an input of n indicating the no. of stairs in the house and 
-  assuming that the stairs can be climbed 1, 2 or 3 steps at a time,
-  find the no. of ways the stair case could be climbed.
-  :param n: The input interger n.
-  :type n: int
-  :return: The no. of ways the staircase could be climbed.
-  :rtype: int
+  To solve a crossword given a set of open slots to fill and a list of words
+  :param crossword: A 2d matrix with empty slots
+  :type crossword: n x n
+  :return: The crossword with the words filled correctly
+  :rtype: n x n
 '''
 
 def fitChar(crwd, rowOrColNo, index, char, rowOrCol):
